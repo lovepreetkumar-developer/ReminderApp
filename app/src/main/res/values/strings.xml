@@ -2,7 +2,6 @@
 
     <string name="app_name">ReminderApp</string>
     <string name="app_nav_graph">App Nav Graph</string>
-    <string name="google_map_key">AIzaSyCePCYsUTI78pdzIaNE-0zy86jkATJexdI</string>
 
     <string name="app_name_splash">Appname</string>
     <string name="skip">SKIP</string>
