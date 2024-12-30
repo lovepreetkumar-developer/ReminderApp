@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/CustomTextViewMedium"
+        android:layout_above="@+id/linearCenter"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_in"
+        android:textColor="@color/yellow_primary_dark"
+        android:textSize="@dimen/_14sdp" />
+
+    <LinearLayout
+        android:id="@+id/linearCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:cardElevation="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_white_filled"
+                android:padding="@dimen/_4sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgEmail"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/ic_email"
+                    tools:ignore="ContentDescription" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etEmail"
+                    style="@style/CustomEditText"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_toEndOf="@+id/imgEmail"
+                    android:ellipsize="end"
+                    android:hint="@string/email_phone"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:cardElevation="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_white_filled"
+                android:padding="@dimen/_4sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgPassword"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/ic_password"
+                    tools:ignore="ContentDescription" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etPassword"
+                    style="@style/CustomEditText"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:layout_toEndOf="@+id/imgPassword"
+                    android:ellipsize="end"
+                    android:hint="@string/password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvForgotPass"
+            style="@style/CustomTextViewMedium"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_3sdp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/blue_forgot_password"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="italic" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            style="@style/CustomButtonRound"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="@string/login" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSignUp"
+            style="@style/CustomTextViewRegular"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_horizontal"
+            android:text="@string/don_t_have_account"
+            android:textColor="@color/hint_color" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOr"
+        style="@style/CustomTextViewRegular"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/linearCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        android:text="@string/or"
+        android:textColor="@color/hint_color" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgGoogle"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_below="@+id/tvOr"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_google"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

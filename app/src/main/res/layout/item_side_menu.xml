@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.techfathers.reminderapp.util.models.SideMenuModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rlMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@{model.selected?@drawable/bg_selected_side_menu:null}"
+        android:padding="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgMenuIcon"
+            android:layout_width="@dimen/_13sdp"
+            android:layout_height="@dimen/_13sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:tint="@{model.selected?@color/yellow_primary_dark:@color/color_icon}"
+            app:simpleResource="@{model.image}"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_menu_home" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_menu_name"
+            style="@style/CustomTextViewBold"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imgMenuIcon"
+            android:text="@{model.name}"
+            android:textAllCaps="true"
+            android:textColor="@{model.selected?@color/yellow_primary_dark:@color/color_icon}"
+            android:textSize="@dimen/_9sdp"
+            tools:text="Home" />
+
+    </RelativeLayout>
+
+</layout>
+

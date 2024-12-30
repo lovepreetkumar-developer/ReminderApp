@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.techfathers.reminderapp.util.models.ProductModel" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvItem"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_4sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewRegular"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_toStartOf="@+id/imgCall"
+                    android:text="@{model.name}"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    tools:text="Peracitamol...." />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCall"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/_5sdp"
+                    android:tag="menu"
+                    app:srcCompat="@drawable/ic_call"
+                    tools:ignore="ContentDescription,VectorDrawableCompat" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                style="?android:ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:rating="3"
+                android:theme="@style/RatingBar" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_shape_able"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_product_one" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CustomTextViewRegular"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="10 Piece available"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/_8sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgLocation"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tag="menu"
+                    app:srcCompat="@drawable/ic_location"
+                    tools:ignore="ContentDescription,VectorDrawableCompat" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewRegular"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/imgLocation"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="Wine Wisky"
+                    android:textColor="@color/colorGrayDark"
+                    android:textSize="@dimen/_8sdp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

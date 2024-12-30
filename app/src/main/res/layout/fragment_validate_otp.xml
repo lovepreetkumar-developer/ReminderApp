@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_primary_dark"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/partial_toolbar" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/viewCurve"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_240sdp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="@dimen/_minus10sdp"
+        android:layout_marginEnd="@dimen/_minus10sdp"
+        android:background="@drawable/image_white_background" />
+
+    <View
+        android:id="@+id/viewFiller"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOtpSentTo"
+        style="@style/CustomTextViewRegular"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Enter OTP sent to +91 9876543210"
+        android:textColor="@color/colorGrayDark"
+        android:textSize="@dimen/_11sdp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_below="@+id/tvOtpSentTo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_otp_vector" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewCurve"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etFirstBlock"
+                style="@style/CustomEditText"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/bg_otp_single_digit"
+                android:elevation="@dimen/_4sdp"
+                android:gravity="center"
+                android:hint="@string/_hash"
+                android:includeFontPadding="false"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:padding="@dimen/_8sdp"
+                android:textSize="@dimen/_11sdp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etSecondBlock"
+                style="@style/CustomEditText"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/bg_otp_single_digit"
+                android:elevation="@dimen/_4sdp"
+                android:gravity="center"
+                android:hint="@string/_hash"
+                android:includeFontPadding="false"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:padding="@dimen/_8sdp"
+                android:textSize="@dimen/_11sdp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etThirdBlock"
+                style="@style/CustomEditText"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/bg_otp_single_digit"
+                android:elevation="@dimen/_4sdp"
+                android:gravity="center"
+                android:hint="@string/_hash"
+                android:includeFontPadding="false"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:padding="@dimen/_8sdp"
+                android:textSize="@dimen/_11sdp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etFourthBlock"
+                style="@style/CustomEditText"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/bg_otp_single_digit"
+                android:elevation="@dimen/_4sdp"
+                android:gravity="center"
+                android:hint="@string/_hash"
+                android:includeFontPadding="false"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:padding="@dimen/_8sdp"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/CustomTextViewMedium"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/did_t_receive_the_otp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/CustomTextViewMedium"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_3sdp"
+            android:text="@string/resend_otp"
+            android:textColor="@color/blue_forgot_password"
+            android:textSize="@dimen/_10sdp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnProceed"
+            style="@style/CustomButtonRoundWhite"
+            android:layout_margin="@dimen/_25sdp"
+            android:text="@string/verify" />
+
+    </LinearLayout>
+
+</RelativeLayout>

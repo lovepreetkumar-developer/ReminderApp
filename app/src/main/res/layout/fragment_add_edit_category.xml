@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/partial_toolbar_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CustomTextViewRegular"
+                android:text="@string/category_name"
+                android:textColor="@color/yellow_primary_dark"
+                android:textSize="@dimen/_10sdp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etUsername"
+                style="@style/CustomEditText"
+                android:ellipsize="end"
+                android:hint="Fruits"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_11sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/color_item_divider" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CustomTextViewRegular"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/category_image"
+                android:textColor="@color/yellow_primary_dark"
+                android:textSize="@dimen/_10sdp" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/image_circle_back">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCategory"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_29sdp"
+                    android:src="@drawable/ic_fruits" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llUpload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/color_gray_button"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvUpload"
+                    style="@style/CustomTextViewMedium"
+                    android:text="@string/upload_image"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/ic_upload" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSave"
+                style="@style/CustomButton"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/save"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

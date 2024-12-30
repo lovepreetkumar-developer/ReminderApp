@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    android:label="@string/app_nav_graph"
+    app:startDestination="@+id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_welcomeSliderFragment"
+            app:destination="@id/welcomeSliderFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/welcomeSliderFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.WelcomeSlideFragment"
+        tools:layout="@layout/fragment_welcome_slider">
+
+        <action
+            android:id="@+id/action_welcomeSliderFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_validateOtpFragment"
+            app:destination="@id/validateOtpFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/validateOtpFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.ValidateOtpFragment"
+        tools:layout="@layout/fragment_validate_otp">
+        <action
+            android:id="@+id/action_validateOtpFragment_to_resetPasswordFragment"
+            app:destination="@id/resetPasswordFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+        <action
+            android:id="@+id/action_validateOtpFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.ForgotPasswordFragment"
+        tools:layout="@layout/fragment_forgot_password">
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_validateOtpFragment"
+            app:destination="@id/validateOtpFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.AboutUsFragment"
+        tools:layout="@layout/fragment_about_us" />
+
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.ResetPasswordFragment"
+        tools:layout="@layout/fragment_reset_password" />
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.DashboardFragment"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_searchProductFragment"
+            app:destination="@id/searchProductFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_mainCategoriesFragment"
+            app:destination="@id/mainCategoriesFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_categoryProductsFragment"
+            app:destination="@id/categoryProductsFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out"  />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchProductFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.SearchProductFragment"
+        tools:layout="@layout/fragment_search_product" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.ProductDetailsFragment"
+        tools:layout="@layout/fragment_product_details" />
+
+    <fragment
+        android:id="@+id/mainCategoriesFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.MainCategoriesFragment"
+        tools:layout="@layout/fragment_main_categories">
+        <action
+            android:id="@+id/action_mainCategoriesFragment_to_addEditMainCategory"
+            app:destination="@id/addEditMainCategory"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+        <action
+            android:id="@+id/action_mainCategoriesFragment_to_categoryProductsFragment"
+            app:destination="@id/categoryProductsFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditMainCategory"
+        android:name="com.techfathers.reminderapp.ui.fragments.AddEditCategoryFragment"
+        tools:layout="@layout/fragment_add_edit_category">
+
+        <argument
+            android:name="type"
+            app:argType="string"
+            android:defaultValue="null"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoryProductsFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.CategoryProductsFragment"
+        tools:layout="@layout/fragment_category_products" >
+        <action
+            android:id="@+id/action_categoryProductsFragment_to_addEditProductFragment"
+            app:destination="@id/addEditProductFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/reminderFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.ReminderFragment"
+        tools:layout="@layout/fragment_reminder" />
+
+    <fragment
+        android:id="@+id/addEditProductFragment"
+        android:name="com.techfathers.reminderapp.ui.fragments.AddEditProductFragment"
+        tools:layout="@layout/fragment_add_edit_product">
+
+        <argument
+            android:name="type"
+            android:defaultValue="null"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_addEditProductFragment_to_reminderFragment"
+            app:destination="@id/reminderFragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out"/>
+
+    </fragment>
+
+</navigation>

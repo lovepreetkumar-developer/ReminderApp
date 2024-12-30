@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/partial_toolbar_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:src="@drawable/ic_app_logo" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAppName"
+                    style="@style/CustomTextViewMedium"
+                    android:layout_centerVertical="true"
+                    android:text="@string/app_name"
+                    android:textColor="@color/yellow_primary_dark"
+                    android:textSize="@dimen/_13sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvVersion"
+                    style="@style/CustomTextViewMedium"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toEndOf="@+id/tvAppName"
+                    android:text="Version 1.1"
+                    android:textColor="@color/colorGrayDark"
+                    android:textSize="@dimen/_11sdp" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CustomTextViewRegular"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="@string/about"
+                android:textColor="@color/yellow_primary_dark"
+                android:textSize="@dimen/_10sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CustomTextViewRegular"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:maxLines="8"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

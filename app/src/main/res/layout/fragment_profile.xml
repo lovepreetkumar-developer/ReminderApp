@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/partial_toolbar_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_210sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/viewCurve"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_minus10sdp"
+                    android:layout_marginEnd="@dimen/_minus10sdp"
+                    android:background="@drawable/image_yellow_ackground" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgProfile"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/image_person" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CustomTextViewMedium"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/john_doe"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewRegular"
+                    android:text="@string/username"
+                    android:textColor="@color/yellow_primary_dark"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etUsername"
+                    style="@style/CustomEditText"
+                    android:ellipsize="end"
+                    android:hint="john smith"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:paddingStart="0dp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_11sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/color_item_divider" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewRegular"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/email"
+                    android:textColor="@color/yellow_primary_dark"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etEmail"
+                    style="@style/CustomEditText"
+                    android:ellipsize="end"
+                    android:hint="@string/john_gmail_com"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="0dp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_11sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/color_item_divider" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewRegular"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/phone"
+                    android:textColor="@color/yellow_primary_dark"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etPhoneNumber"
+                    style="@style/CustomEditText"
+                    android:ellipsize="end"
+                    android:hint="+91 00-0000-00000"
+                    android:importantForAutofill="no"
+                    android:inputType="phone"
+                    android:paddingStart="0dp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_11sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/color_item_divider" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewRegular"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/phone"
+                    android:textColor="@color/yellow_primary_dark"
+                    android:textSize="@dimen/_10sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etPassword"
+                        style="@style/CustomEditText"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_toStartOf="@+id/imgLock"
+                        android:ellipsize="end"
+                        android:hint="@string/stars"
+                        android:importantForAutofill="no"
+                        android:inputType="textPassword"
+                        android:paddingStart="0dp"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:paddingEnd="0dp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgLock"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_password" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/color_item_divider" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewMedium"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/settings"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewRegular"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/set_currency"
+                    android:textColor="@color/yellow_primary_dark"
+                    android:textSize="@dimen/_10sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:background="@drawable/bg_border_gray"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinnerCurrencies"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:backgroundTint="@color/white"
+                        android:entries="@array/currencies" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCurrency"
+                        style="@style/CustomTextViewMedium"
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Rupees" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgDownArrow"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_down_arrow"
+                        android:tint="@color/colorGrayDark" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewRegular"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/notification"
+                    android:textColor="@color/yellow_primary_dark"
+                    android:textSize="@dimen/_10sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/bg_border_gray"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CustomTextViewMedium"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:text="@string/enable" />
+
+                    <androidx.appcompat.widget.AppCompatToggleButton
+                        android:id="@+id/togglePolicy"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/toggle_selector"
+                        android:checked="true"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

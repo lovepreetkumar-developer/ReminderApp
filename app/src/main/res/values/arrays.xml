@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="currencies">
+        <item>₹Rupees</item>
+        <item>$Dollar</item>
+        <item>€Euro</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>Medicine</item>
+        <item>Fruits</item>
+        <item>Vegetables</item>
+        <item>Clothes</item>
+        <item>Cosmetics</item>
+    </string-array>
+
+</resources>

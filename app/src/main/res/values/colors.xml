@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FED02F</color>
+    <color name="colorPrimaryDark">#D7870D</color>
+    <color name="colorAccent">#E8B66B</color>
+
+    <color name="alizarin_transparent">#DABE3128</color>
+    <color name="red_inactive">#e57373</color>
+    <color name="purple_inactive">#ba68c8</color>
+    <color name="color_blue_light">#307AFF</color>
+    <color name="blue_inactive">#64b5f6</color>
+    <color name="green_inactive">#81c784</color>
+    <color name="blue_grey_inactive">#90a4ae</color>
+    <color name="yellow_primary_dark">#D7870D</color>
+    <color name="yellow_primary">#FED02F</color>
+    <color name="orange_inactive">#ffb74d</color>
+    <color name="gery_inactive">#e0e0e0</color>
+
+    <!--Gradient Color -->
+    <color name="gradient_start">#e0e0e0</color>
+    <color name="gradient_center">#e0e0e0</color>
+    <color name="gradient_end">#e0e0e0</color>
+
+    <color name="default_inactive">#78909c</color>
+
+    <color name="red_bg_light">#ffebee</color>
+    <color name="purple_bg_light">#f3e5f5</color>
+    <color name="blue_bg_light">#e3f2fd</color>
+    <color name="green_bg_light">#e8f5e9</color>
+    <color name="blue_grey_bg_light">#eceff1</color>
+    <color name="yellow_bg_light">#fffde7</color>
+    <color name="orange_bg_light">#fff3e0</color>
+    <color name="grey_bg_light">#fafafa</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="light_black">#383838</color>
+    <color name="purple">#800E49</color>
+    <color name="purple_light">#93235D</color>
+    <color name="shadow">#d0d8dc</color>
+    <color name="gray">#BABABA</color>
+    <color name="gray_dark">#868383</color>
+    <color name="gray_light">#C3C3C3</color>
+    <color name="gray_light_two">#F4F4F4</color>
+    <color name="gray_shark">#212529</color>
+    <color name="gray_shark_dark">#0D0F10</color>
+    <color name="blue_dark">#21265F</color>
+    <color name="color_text_blue">#001F3A</color>
+    <color name="sky_blue">#1F7DE5</color>
+    <color name="yellow_one">#AEA03B</color>
+    <color name="yellow_two">#B56224</color>
+    <color name="yellow_inactive">#fff176</color>
+    <color name="color_rating_stars">#FED02F</color>
+    <color name="yellow_three">#B08F35</color>
+    <color name="red">#C03239</color>
+    <color name="green">#099942</color>
+    <color name="transparent">#00FFFDFD</color>
+    <color name="colorTextGreen">#71BE47</color>
+    <color name="colorTextGray">#707d8a</color>
+    <color name="hint_color">#707d8a</color>
+    <color name="transparent_black">#7E000000</color>
+    <color name="transparent_black_more">#E81E1B1C</color>
+    <color name="transparent_light">#666666</color>
+    <color name="colorGrayDark">#757575</color>
+    <color name="colorGrayScheduleText">#7E7E7E</color>
+    <color name="gray_dark_two">#56908785</color>
+    <color name="colorGold">#D4AF37</color>
+    <color name="color_watermelon">#FF5E88</color>
+    <color name="color_watermelon_dark">#E52C7B</color>
+    <color name="color_btn_text">#FFD7E1</color>
+    <color name="color_text_gray">#737373</color>
+    <color name="color_text_black">#4C4C4C</color>
+    <color name="color_side_menu_back">#F0F0F0</color>
+    <color name="color_start_watermelon">#FCA3D3</color>
+    <color name="color_end_watermelon">#F5E6E6</color>
+    <color name="color_center_watermelon">#F8CADE</color>
+    <color name="color_purchase_sub_image_back">#F8E1D9</color>
+    <color name="color_light_watermelon">#F8E1D9</color>
+    <color name="color_white_layer">#5CFFFFFF</color>
+    <color name="example_1_white_light">#4DFFFFFF</color>
+    <color name="example_1_white">#D9FFFFFF</color>
+    <color name="example_1_bg">#3A284C</color>
+    <color name="example_1_bg_light">#433254</color>
+
+    <color name="mb_gray">#ffdedede</color>
+    <color name="mb_blue">#ff0099cc</color>
+    <color name="mb_blue_dark">#ff00719b</color>
+    <color name="white_light">#F8F8F8</color>
+    <color name="gray_light_location_back">#BEB2AB</color>
+    <color name="color_tab_selected">#D7870D</color>
+    <color name="color_deal_heading_gray">#9C9C9C</color>
+    <color name="color_gray_drink_pass_header">#6F6F6F</color>
+    <color name="color_lock_layout">#B9AFAFAF</color>
+    <color name="color_gray_location_back">#EBEBEB</color>
+    <color name="color_disabled_view">#EF8D9B</color>
+    <color name="color_card_number_bg_border">#9D9C9D</color>
+    <color name="color_card">#E91E63</color>
+    <color name="blue_forgot_password">#2713F1</color>
+    <color name="color_bg_selected_menu">#FFF1C2</color>
+    <color name="color_icon">#707d8a</color>
+    <color name="color_item_divider">#37000000</color>
+
+    <color name="color_seek_bar_back">#707070</color>
+    <color name="color_seek_bar">#27CC43</color>
+    <color name="color_gray_button">#A1AAB2</color>
+</resources>

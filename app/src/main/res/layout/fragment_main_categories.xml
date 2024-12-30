@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/partial_toolbar_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMainCategories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:nestedScrollingEnabled="true"
+            android:overScrollMode="never"
+            tools:listitem="@layout/item_main_category"
+            android:scrollbars="none" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgAdd"
+            android:layout_width="@dimen/_35sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:src="@drawable/ic_plus_filled"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
